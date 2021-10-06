@@ -1,0 +1,31 @@
+<div class="upload_files_container">
+  <h1>Upload Files</h1>
+
+  <form [formGroup]="filesForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="file">File</label>
+      <input
+        formControlName="file"
+        id="file"
+        type="file"
+        class="form-control"
+        multiple="multiple"
+        accept="image/*"
+        (change)="onFileChange($event)">
+    </div>
+
+    <div class="file_list">
+      <div class="file_item" *ngFor="let file of selectFiles">
+        <p>{{file.name || file.currentFile.name}}</p>
+        <h1>{{file?.state}}</h1>
+        <ng-container *ngIf="file.path">
+          <img [src]="transformlink(file)">
+        </ng-container>
+      </div>
+    </div>
+
+    <button class="btn_form" type="submit">Save as full file</button>
+  </form>
+  <button class="btn_form" (click)="saveFiles()">Save as link file</button>
+
+</div>

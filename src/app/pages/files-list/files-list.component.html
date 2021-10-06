@@ -1,0 +1,19 @@
+<div class="listContainer">
+  <ul>
+    <li><h2>Base64Files</h2></li>
+    <li *ngFor="let file of fileList">
+      <ng-container *ngIf="file?.convertFile">
+        <img [src]="file.convertFile">
+      </ng-container>
+    </li>
+  </ul>
+  <ul>
+    <li><h2>linkFiles</h2></li>
+    <li *ngFor="let file of fileLinks">
+      <ng-container *ngIf="file.blobFile">
+        <img [src]="transformlink(file.blobFile)">
+      </ng-container>
+    </li>
+  </ul>
+</div>
+

@@ -1,0 +1,30 @@
+.upload_files_container {
+  margin-top: 20px;
+  padding:  0 60px;
+}
+.btn_form {
+  margin-top: 25px;
+  background-color: blue;
+  color: white;
+  padding: 5px 20px;
+  font-family: "Times New Roman";
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.file_list {
+  padding: 10px;
+}
+.file_item {
+  margin: 10px 0;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.file_item p {
+  margin-bottom: 10px;
+}
+.file_item img {
+  width: 200px;
+  height: auto;
+}

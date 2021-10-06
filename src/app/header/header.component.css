@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  border: 1px solid silver;
+  border-radius: 4px;
+  background: silver;
+  align-items: center;
+}
+header .logo {
+
+}
+header .menu {
+  display: flex;
+  margin-left: 40px;
+}
+header .menu li {
+  margin-left: 15px;
+  font-size: 24px;
+  font-family: cursive;
+}
+header .menu li:hover {
+  color: cadetblue;
+  cursor: pointer;
+}

@@ -1,0 +1,8 @@
+.listContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li img {
+  max-width: 200px;
+}
